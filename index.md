@@ -12,5 +12,11 @@ home_title: " "
 
 <h3>Последние записи в блоге:</h3>
 <style>
+  /* Скрываем английский заголовок Recent Posts */
   .page__header, .archive__subtitle { display: none !important; }
+
+  /* Полностью скрываем и запрещаем светиться кнопке Follow в профиле */
+  .author__urls-wrapper button, .author__urls-wrapper .btn { display: none !important; }
 </style>
+
+ 
