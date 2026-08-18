@@ -1,9 +1,12 @@
 main:
-  - title: "Posts"
-    url: /posts/
-  - title: "Categories"
-    url: /categories/
-  - title: "Tags"
-    url: /tags/
-  - title: "About"
+  - title: "Главная"
+    url: /
+  - title: "Мои аквариумы"
+    url: /categories/my-tanks/
+  - title: "Заметки / Дневник"
+    url: /categories/diary/
+  - title: "Рыбки и растения"
+    url: /categories/flora-fauna/
+  - title: "Обо мне"
     url: /about/
+
