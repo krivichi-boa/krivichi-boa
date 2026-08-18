@@ -18,3 +18,9 @@ author:
 remote_theme: "mmistakes/minimal-mistakes@4.24.0"
 plugins:
   - jekyll-include-cache
+# Отключаем показ копирайта движков
+minimal_mistakes_skin: "mint" # эта строчка у вас уже есть
+
+# Добавьте эти две строчки в конец файла:
+base_path: ""
+legal: false
