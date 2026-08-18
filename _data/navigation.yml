@@ -1,3 +1,4 @@
+# Главное меню сайта
 main:
   - title: "Главная"
     url: /
@@ -7,6 +8,3 @@ main:
     url: /categories/diary/
   - title: "Рыбки и растения"
     url: /categories/flora-fauna/
-  - title: "Обо мне"
-    url: /about/
-
