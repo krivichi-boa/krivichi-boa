@@ -8,3 +8,7 @@ main:
     url: /categories/diary/
   - title: "Рыбки и растения"
     url: /categories/flora-fauna/
+# Настройки перевода интерфейса
+site_text:
+  ru:
+    recent_posts: "Новые публикации:"
