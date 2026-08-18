@@ -2,6 +2,8 @@
 main:
   - title: "Главная"
     url: /
+  - title: "Новости"
+    url: /categories/news/
   - title: "Мои аквариумы"
     url: /categories/my-tanks/
   - title: "Заметки / Дневник"
