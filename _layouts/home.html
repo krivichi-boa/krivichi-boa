@@ -4,7 +4,18 @@ layout: archive
 
 {{ content }}
 
-<h3 class="archive__subtitle" style="display: none !important;">{{ site.data.ui-text[site.locale].recent_posts | default: "Recent Posts" }}</h3>
+<style>
+  /* Принудительное и надежное скрытие английских слов */
+  .page__header, .archive__subtitle { 
+    display: none !important; 
+  }
+  .author__urls-wrapper button, .author__urls-wrapper .btn { 
+    display: none !important; 
+  }
+  .page__footer-follow, .page__footer-copyright, .page__share, .page__share-title { 
+    display: none !important; 
+  }
+</style>
 
 {% if paginator %}
   {% assign posts = paginator.posts %}
@@ -12,15 +23,10 @@ layout: archive
   {% assign posts = site.posts %}
 {% endif %}
 
-{% entries_grid %}{% for post in posts %}
-  {% include archive-single.html type="grid" %}
-{% endfor %}{% jekyll_endentries_grid %}
+<div class="entries-layout list">
+  {% for post in posts %}
+    {% include archive-single.html type="list" %}
+  {% endfor %}
+</div>
 
 {% include paginator.html %}
-
-<style>
-  /* Дополнительная железная гарантия скрытия через стили */
-  .page__header, .archive__subtitle { 
-    display: none !important; 
-  }
-</style>
