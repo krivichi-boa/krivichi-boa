@@ -39,11 +39,32 @@ author_profile: true
     display: none !important; 
   }
 </style>
+<!-- НАЧАЛО ОБНОВЛЕННОГО ПОДВАЛА НЕКОММЕРЧЕСКОГО РЕСУРСА -->
+<footer style="text-align: center; padding: 30px 10px; color: rgba(255,255,255,0.6); font-size: 13px; margin-top: 50px; border-top: 1px solid rgba(255,255,255,0.1); line-height: 1.6;">
+  
+  <p style="font-weight: bold; margin-bottom: 5px; color: #fff;">
+    © 2026 Белорусское общество аквариумистов
+  </p>
+  
+  <p style="margin: 0 auto max-width: 600px; font-size: 12px; color: rgba(255,255,255,0.4);">
+    Данный сайт является частным некоммерческим информационным ресурсом, созданным исключительно в целях хобби, обмена опытом и популяризации аквариумистики в Беларуси. Ресурс не преследует коммерческих целей, не содержит рекламы и не оказывает платных услуг.
+  </p>
+  
+  <p style="margin-top: 10px; font-size: 11px;">
+    Мнения авторов заметок могут не совпадать с позицией третьих лиц. 
+    Все права на текстовые материалы и фотографии принадлежат их авторам.
+  </p>
 
-<!-- Пишем красивый, чистый копирайт на русском языке вручную вместо старого подвала -->
-<footer style="text-align: center; padding: 20px 0; color: rgba(255,255,255,0.6); font-size: 14px; margin-top: 40px;">
-  © 2026 Белорусское общество аквариумистов. Все права защищены.
 </footer>
-<!-- КОНЕЦ БЛОКА СКРЫТИЯ АНГЛИЙСКИХ СЛОВ -->
 
- 
+<style>
+  /* Принудительно скрываем все встроенные английские элементы темы */
+  .page__header, .archive__subtitle, 
+  .author__urls-wrapper button, .author__urls-wrapper .btn, 
+  .page__footer-follow, .page__footer-copyright, 
+  footer .social-icons, .page__share, .page__share-title { 
+    display: none !important; 
+  }
+</style>
+<!-- КОНЕЦ ОБНОВЛЕННОГО ПОДВАЛА -->
+
