@@ -16,4 +16,19 @@ author_profile: true
   .archive__subtitle, .page__header {
     display: none !important;
   }
+   /* 3. ТОТАЛЬНОЕ ОТКЛЮЧЕНИЕ НАДПИСИ И КНОПКИ FOLLOW (ФЛОУН) ВЕЗДЕ */
+  .author__urls-wrapper span, 
+  .author__urls-wrapper button, 
+  .author__urls-wrapper .btn,
+  .author__urls-wrapper h3,
+  .author__urls.nav,
+  button[class*="author__urls"],
+  span[class*="author__urls"] {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    height: 0 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
 </style>
