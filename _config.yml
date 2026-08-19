@@ -14,7 +14,8 @@ author:
   avatar: 
   bio: "Блог об аквариумистике: фото аквариумов, обзоры растений и дневники ухода."
   location: "Беларусь"
-links:
+  # НАЧАЛО БЛОКА ССЫЛОК:
+  links:
     - label: "Telegram-канал"
       icon: "fab fa-fw fa-telegram"
       url: "https://t.me" # Замените на вашу ссылку
