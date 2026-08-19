@@ -20,10 +20,10 @@ author:
       icon: "fab fa-fw fa-telegram"
       url: "https://t.me/BelurysianBOA" # Замените на вашу ссылку
     - label: "Theads"
-      icon: "fab fa-fw fa-link"
+      icon: "fab fa-fw fa-Theads"
       url: "https://www.threads.com/@belarusianboa/replies?__pwa=1" # Замените на вашу ссылку
     - label: "Instagram"
-      icon: "fas fa-fw fa-instfgram"
+      icon: "fas fa-fw fa-instagram"
       url: "https://www.instagram.com/belarusianboa/" # Замените на вашу ссылку
 # Настройки для корректной сборки на GitHub Pages
 remote_theme: "mmistakes/minimal-mistakes@4.24.0"
