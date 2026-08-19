@@ -12,8 +12,18 @@ author_profile: true
 ### Последние записи в блоге:
 
 
-<!-- БЛОК СКРЫТИЯ СИСТЕМНЫХ АНГЛИЙСКИХ СЛОВ И КНОПОК ШАБЛОНА -->
+<!-- БЛОК СКРЫТИЯ СИСТЕМНЫХ АНГЛИЙСКИХ СЛОВ И ФИКСАЦИИ ПОДВАЛА -->
 <style>
+  /* Удерживаем подвал в самом низу страницы, если мало текста */
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  #main {
+    flex: 1;
+  }
+
   /* Скрываем английский заголовок "Recent Posts" */
   .page__header, .archive__subtitle { 
     display: none !important; 
@@ -29,19 +39,19 @@ author_profile: true
     display: none !important; 
   }
 
-  /* Скрываем стандартный системный копирайт темы */
+  /* Скрываем стандартный копирайт темы */
   .page__footer-copyright { 
     display: none !important; 
   }
 
-  /* Скрываем английские кнопки "Share on" (Поделиться) внутри будущих постов */
+  /* Скрываем английские кнопки "Share on" внутри будущих постов */
   .page__share, .page__share-title { 
     display: none !important; 
   }
 </style>
 
 <!-- КРАСИВЫЙ И ПРАВИЛЬНЫЙ ПОДВАЛ НЕКОММЕРЧЕСКОГО РЕСУРСА -->
-<footer style="text-align: center; padding: 25px 10px; color: rgba(255,255,255,0.4); font-size: 12px; margin-top: 50px; border-top: 1px solid rgba(255,255,255,0.1); line-height: 1.6; font-family: sans-serif;">
+<footer style="text-align: center; padding: 25px 10px; color: rgba(255,255,255,0.4); font-size: 12px; margin-top: auto; border-top: 1px solid rgba(255,255,255,0.1); line-height: 1.6; font-family: sans-serif; width: 100%;">
   
   <p style="font-weight: bold; margin-bottom: 5px; color: rgba(255,255,255,0.7); font-size: 13px;">
     © 2026 Белорусское общество аквариумистов
@@ -56,3 +66,4 @@ author_profile: true
   </p>
 
 </footer>
+
