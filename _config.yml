@@ -13,18 +13,18 @@ author:
   name: "БОА"
   avatar: 
   bio: "Блог об аквариумистике: фото аквариумов, обзоры растений и дневники ухода."
-  location: "Беларусь"
+  location: "Кривичи"
   # НАЧАЛО БЛОКА ССЫЛОК:
   links:
     - label: "Telegram-канал"
       icon: "fab fa-fw fa-telegram"
-      url: "https://t.me" # Замените на вашу ссылку
-    - label: "Группа ВКонтакте"
-      icon: "fab fa-fw fa-vk"
-      url: "https://vk.com" # Замените на вашу ссылку
-    - label: "Наш форум / Сайт"
-      icon: "fas fa-fw fa-link"
-      url: "https://example.com" # Замените на вашу ссылку
+      url: "https://t.me/BelurysianBOA" # Замените на вашу ссылку
+    - label: "Theads"
+      icon: "fab fa-fw fa-link"
+      url: "https://www.threads.com/@belarusianboa/replies?__pwa=1" # Замените на вашу ссылку
+    - label: "Instagram"
+      icon: "fas fa-fw fa-instfgram"
+      url: "https://www.instagram.com/belarusianboa/" # Замените на вашу ссылку
 # Настройки для корректной сборки на GitHub Pages
 remote_theme: "mmistakes/minimal-mistakes@4.24.0"
 plugins:
