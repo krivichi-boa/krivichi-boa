@@ -1,0 +1,26 @@
+---
+layout: archive
+---
+
+{{ content }}
+
+<h3 class="archive__subtitle" style="display: none !important;">{{ site.data.ui-text[site.locale].recent_posts | default: "Recent Posts" }}</h3>
+
+{% if paginator %}
+  {% assign posts = paginator.posts %}
+{% else %}
+  {% assign posts = site.posts %}
+{% endif %}
+
+{% entries_grid %}{% for post in posts %}
+  {% include archive-single.html type="grid" %}
+{% endfor %}{% jekyll_endentries_grid %}
+
+{% include paginator.html %}
+
+<style>
+  /* Дополнительная железная гарантия скрытия через стили */
+  .page__header, .archive__subtitle { 
+    display: none !important; 
+  }
+</style>
