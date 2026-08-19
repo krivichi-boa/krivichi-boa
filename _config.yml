@@ -30,3 +30,15 @@ legal: false
 footer:
   links:
   legal: "© 2026 Белорусское общество аквариумистов.<br>Данный сайт является частным некоммерческим информационным ресурсом. Проект создан исключительно в познавательных целях, для обмена опытом среди любителей и популяризации аквариумистики в Беларуси. Ресурс не преследует коммерческих целей, не содержит рекламы, не занимается продажами и не оказывает платных услуг.<br>Все права на опубликованные авторские текстовые материалы и фотографии принадлежат создателю блога."
+# Принудительное скрытие всех английских слов на GitHub Pages
+head_html: |
+  <style>
+    /* Скрываем Recent Posts */
+    .page__header, .archive__subtitle { display: none !important; }
+    /* Скрываем кнопку Follow */
+    .author__urls-wrapper button, .author__urls-wrapper .btn { display: none !important; }
+    /* Скрываем FEED */
+    .page__footer-follow { display: none !important; }
+    /* Скрываем старый копирайт шаблона */
+    .page__footer-copyright { display: none !important; }
+  </style>
