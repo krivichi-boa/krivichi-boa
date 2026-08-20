@@ -52,6 +52,13 @@ head_html: |
     .page__footer-follow { display: none !important; }
     /* Скрываем старый копирайт шаблона */
     .page__footer-copyright { display: none !important; }
+     .pagination, .page__nav, .pagination--pager { 
+      display: none !important; 
+      visibility: hidden !important; 
+      height: 0 !important; 
+      padding: 0 !important; 
+      margin: 0 !important;
+    }
   </style>
 # Настройки перевода интерфейса темы
 site_text:
