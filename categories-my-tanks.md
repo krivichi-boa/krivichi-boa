@@ -11,14 +11,11 @@ author_profile: true
 
 {% assign category_posts = site.categories['my-tanks'] %}
 {% for post in category_posts %}
-  ### [{% if post.title %}{{ post.title }}{% else %}{{ post.id }}{% endif %}]({{ post.url | relative_url }})
-  *Дата публикации: {{ post.date | date: "%d.%m.%Y" }}*
+  <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+  <p style="font-size: 14px; color: #888; margin-top: -10px;"><i>Дата публикации: {{ post.date | date: "%d.%m.%Y" }}</i></p>
 
-  {% if post.excerpt %}
-    {{ post.excerpt | strip_html | truncatewords: 30 }}
-  {% endif %}
+  <p>{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
   
-  [Читать далее... ]({{ post.url | relative_url }})
-  
-  ---
+  <p><a href="{{ post.url | relative_url }}" class="btn btn--info">Читать далее...</a></p>
+  <hr>
 {% endfor %}
