@@ -10,10 +10,5 @@ main:
     url: /categories/diary/
   - title: "Рыбки и растения"
     url: /categories/flora-fauna/
-  - title: "О проекте"   # или "О нас"
+  - title: "О проекте"
     url: /about/
-
-# Настройки перевода интерфейса
-site_text:
-  ru:
-    recent_posts: "Новые публикации:"
