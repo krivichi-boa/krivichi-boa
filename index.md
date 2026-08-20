@@ -28,4 +28,8 @@ author_profile: true
   .author__urls-wrapper h3 {
     display: none !important;
   }
+   /* 4. СКРЫВАЕМ КНОПКИ НАВИГАЦИИ PREVIOUS И NEXT В СТАТЬЯХ */
+  .initialism, .page__nav {
+    display: none !important;
+  }
 </style>
