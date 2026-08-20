@@ -53,3 +53,7 @@ head_html: |
     /* Скрываем старый копирайт шаблона */
     .page__footer-copyright { display: none !important; }
   </style>
+# Настройки перевода интерфейса темы
+site_text:
+  ru:
+    recent_posts: "Новые публикации:"
