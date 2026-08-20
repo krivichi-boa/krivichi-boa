@@ -1,0 +1,21 @@
+---
+layout: single
+title: "Рыбки и растения"
+permalink: /categories/flora-fauna/
+author_profile: true
+---
+
+Полезная информация, обзоры видов рыб, креветок, улиток, а также секреты выращивания аквариумных растений.
+
+---
+
+{% assign category_posts = site.categories['flora-fauna'] %}
+{% for post in category_posts %}
+  <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+  <p style="font-size: 14px; color: #888; margin-top: -10px;"><i>Дата публикации: {{ post.date | date: "%d.%m.%Y" }}</i></p>
+
+  <p>{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
+  
+  <p><a href="{{ post.url | relative_url }}" class="btn btn--info">Читать далее...</a></p>
+  <hr>
+{% endfor %}
