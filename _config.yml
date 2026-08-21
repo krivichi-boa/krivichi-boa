@@ -64,3 +64,12 @@ head_html: |
 site_text:
   ru:
     recent_posts: "Новые публикации:"
+  # Безопасная настройка фонового баннера для главной страницы
+defaults:
+  - scope:
+      path: ""
+    values:
+      header:
+        overlay_image: "/assets/images/main-banner.jpg"
+        overlay_filter: 0.4
+  
