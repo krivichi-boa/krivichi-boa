@@ -5,7 +5,7 @@
   }
 
   /* 2. Полностью скрываем и запрещаем светиться кнопке Follow в левой панели */
-  .author__urls-wrapper button, .author__urls-wrapper .btn { 
+  .author__urls-wrapper button, .author__urls-wrapper .btn, .author__urls-wrapper h3 { 
     display: none !important; 
   }
 
@@ -19,8 +19,28 @@
     display: none !important; 
   }
 
-  /* 5. Скрываем кнопки Share on (Поделиться) внутри статей */
-  .page__share, .page__share-title { 
-    display: none !important; 
+  /* 5. ПОДЛАДЫВАЕМ ФОНОВОЕ ФОТО НА ВСЕ СТРАНИЦЫ САЙТА */
+  body, .page, .archive, #main {
+    background-image: url('/assets/images/site-bg.jpg') !important;
+    background-position: center top !important;
+    background-repeat: repeat !important;
+    background-attachment: fixed !important;
+    background-size: auto !important;
+  }
+  
+  /* Делаем левую панель автора контрастной и белой */
+  .sidebar {
+    background-color: #ffffff !important;
+    padding: 15px !important;
+    border-radius: 6px !important;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08) !important;
+  }
+
+  /* Делаем подложку статей белой, чтобы текст отлично читался на фоне картинки */
+  .page__inner-wrap {
+    background-color: #ffffff !important;
+    padding: 30px !important;
+    border-radius: 8px !important;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05) !important;
   }
 </style>
