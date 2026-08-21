@@ -1,0 +1,32 @@
+---
+# Этот блок с черточками обязателен для работы стилей!
+---
+
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // загрузка скина
+@import "minimal-mistakes"; // загрузка главных стилей темы
+
+/* НАШИ КАСТОМНЫЕ ИЗМЕНЕНИЯ ФОНА: */
+
+body, .page, .archive, #main {
+  background-image: url('/assets/images/site-bg.jpg') !important;
+  background-position: center top !important;
+  background-repeat: repeat !important;
+  background-attachment: fixed !important;
+  background-size: auto !important;
+}
+
+/* Делаем левую панель белой и контрастной */
+.sidebar {
+  background-color: #ffffff !important;
+  padding: 15px !important;
+  border-radius: 6px !important;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08) !important;
+}
+
+/* Делаем подложку статей белой, чтобы текст легко читался */
+.page__inner-wrap {
+  background-color: #ffffff !important;
+  padding: 30px !important;
+  border-radius: 8px !important;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05) !important;
+}
