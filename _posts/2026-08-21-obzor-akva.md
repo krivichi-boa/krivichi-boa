@@ -1,10 +1,12 @@
 ---
 layout: category
-title: "Мои аквариумы"
+title: "Мои 100 литров."
 category: my-tanks
 permalink: /categories/my-tanks/
 author_profile: true
 ---
+
+
 
 Мы запустили аквариум на 100 литров.
 *фильтр:aqael150 на 150 литров.
