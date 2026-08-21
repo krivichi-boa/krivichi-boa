@@ -10,5 +10,7 @@ main:
     url: /categories/diary/
   - title: "Рыбки и растения"
     url: /categories/flora-fauna/
+  - title: "Наши животные"
+    url: /categories/our-animals
   - title: "О проекте"
     url: /about/
