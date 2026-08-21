@@ -1,70 +1,50 @@
-# Основные настройки сайта БОА
 title: "Белорусское общество аквариумистов"
 description: "Заметки, дневники запуска и полезный опыт любителей подводного мира в Беларуси."
-url: "https://github.io" # Ваш точный адрес сайта
+url: "https://github.io"
 locale: "ru-RU"
-date_format: "%d.%m.%Y"
 
-# Цветовая схема (мятный/зеленый отлично подходит для темы аквариумных растений)
+# Тема оформления и стиль
+remote_theme: "mmistakes/minimal-mistakes@4.24.0"
 minimal_mistakes_skin: "mint"
 
-# Настройки боковой панели (без личного имени и фото — Вариант А)
+# Настройки автора блога (Нейтральные, без фото)
 author:
   name: "БОА"
-  avatar:"/krivichi-boa/Luga.jpg"
+  avatar:
   bio: "Блог об аквариумистике: фото аквариумов, обзоры растений и дневники ухода."
   location: "Кривичи"
-  # НАЧАЛО БЛОКА ССЫЛОК:
   links:
     - label: "Telegram-канал"
       icon: "fab fa-fw fa-telegram"
-      url: "https://t.me/BelurysianBOA" # Замените на вашу ссылку
-    - label: "Theads"
+      url: "https://t.me"
+    - label: "Threads"
       icon: "fas fa-fw fa-at"
-      url: "https://www.threads.com/@belarusianboa/replies?__pwa=1" # Замените на вашу ссылку
+      url: "https://threads.net"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram-square"
-      url: "https://www.instagram.com/belarusianboa/" # Замените на вашу ссылку
-# Настройки для корректной сборки на GitHub Pages
-remote_theme: "mmistakes/minimal-mistakes@4.24.0"
+      url: "https://instagram.com"
+
+# Подключаемые системные плагины
 plugins:
   - jekyll-include-cache
-# Отключаем показ копирайта движков
-minimal_mistakes_skin: "mint" # эта строчка у вас уже есть
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
 
-# Добавьте эти две строчки в конец файла:
-base_path: ""
-legal: false
-# Скрытие английских элементов интерфейса темы
-# (Recent Posts, Follow, Feed, Powered by)
-# и кастомный некоммерческий подвал сайта БОА
-footer:
-  links:
-  legal: "© 2026 Белорусское общество аквариумистов.<br>Данный сайт является частным некоммерческим информационным ресурсом. Проект создан исключительно в познавательных целях, для обмена опытом среди любителей и популяризации аквариумистики в Беларуси. Ресурс не преследует коммерческих целей, не содержит рекламы, не занимается продажами и не оказывает платных услуг.<br>Все права на опубликованные авторские текстовые материалы и фотографии принадлежат автору."
-# Принудительное скрытие всех английских слов на GitHub Pages
-head_html: |
-  <style>
-    /* Скрываем Recent Posts */
-    .page__header, .archive__subtitle { display: none !important; }
-    /* Скрываем кнопку Follow */
-    .author__urls-wrapper button, .author__urls-wrapper .btn { display: none !important; }
-    /* Скрываем FEED */
-    .page__footer-follow { display: none !important; }
-    /* Скрываем старый копирайт шаблона */
-    .page__footer-copyright { display: none !important; }
-     .pagination, .page__nav, .pagination--pager { 
-      display: none !important; 
-      visibility: hidden !important; 
-      height: 0 !important; 
-      padding: 0 !important; 
-      margin: 0 !important;
-    }
-  </style>
-# Настройки перевода интерфейса темы
+# Исключаем системный мусор из сборки
+exclude:
+  - "node_modules"
+  - "Gemfile"
+  - "Gemfile.lock"
+  - "package.json"
+  - "README.md"
+
+# Перевод интерфейса темы
 site_text:
   ru:
     recent_posts: "Новые публикации:"
-  # Безопасная настройка фонового баннера для главной страницы
+
+# Безопасная настройка фонового баннера для главной страницы
 defaults:
   - scope:
       path: ""
@@ -72,4 +52,3 @@ defaults:
       header:
         overlay_image: "/assets/images/main-banner.jpg"
         overlay_filter: 0.4
-  
