@@ -54,32 +54,3 @@ defaults:
         overlay_image: "/assets/images/main-banner.jpg"
         overlay_filter: 0.4
 
-# Безопасное добавление фонового изображения на весь сайт через стили
-head_html: |
-  <style>
-    /* Подкладываем фоновое фото на весь сайт */
-    body, .page, .archive, #main {
-      background-image: url('/assets/images/site-bg.jpg') !important;
-      background-position: center top !important;
-      background-repeat: repeat !important;
-      background-attachment: fixed !important;
-      background-size: auto !important;
-      background-color: #f4f7f5 !important;
-    }
-    
-    /* Делаем боковую панель автора белой, чтобы ссылки отлично читались на фоне фото */
-    .sidebar {
-      background-color: #ffffff !important;
-      padding: 15px !important;
-      border-radius: 6px !important;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.08) !important;
-    }
-
-    /* Делаем подложку статей белой и непрозрачной, чтобы текст не сливался с фоновым фото */
-    .page__inner-wrap {
-      background-color: #ffffff !important;
-      padding: 30px !important;
-      border-radius: 8px !important;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.05) !important;
-    }
-  </style>
