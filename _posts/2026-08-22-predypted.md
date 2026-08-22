@@ -1,6 +1,6 @@
 ---
 layout: category
-title: "Новости"
+title: "Предупреждение о неблагоприятном явлении"
 category: news
 permalink: /categories/news/
 author_profile: true
