@@ -42,5 +42,19 @@
     padding: 30px !important;
     border-radius: 8px !important;
     box-shadow: 0 4px 15px rgba(0,0,0,0.05) !important;
+    /* 2. ТОТАЛЬНОЕ ОТКЛЮЧЕНИЕ НАДПИСИ И КНОПКИ FOLLOW (ФЛОУН) ВЕЗДЕ */
+  .author__urls-wrapper button, 
+  .author__urls-wrapper .btn,
+  .author__urls-wrapper h3,
+  .author__urls-wrapper span,
+  .author__urls.nav,
+  button[class*="author__urls"],
+  span[class*="author__urls"] {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    height: 0 !important;
+    padding: 0 !important;
+    margin: 0 !important;
   }
 </style>
