@@ -58,3 +58,14 @@ aside.sidebar {
   margin-bottom: 30px !important;
   border-radius: 0 0 8px 8px !important;
 }
+/* НАВСЕГДА СКРЫВАЕМ АНГЛИЙСКУЮ СТРОЧКУ ДАТЫ ОБНОВЛЕНИЯ */
+.page__meta,
+.page__meta-label,
+th[id*="meta"] {
+  display: none !important;
+  visibility: hidden !important;
+  height: 0 !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
