@@ -2,7 +2,6 @@
 layout: category
 title: "Предупреждение о неблагоприятном явлении на 23.08.26."
 category: news
-permalink: /categories/news/
 author_profile: true
 ---
 
