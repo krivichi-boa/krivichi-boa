@@ -57,8 +57,8 @@ defaults:
       header:
         overlay_image: "/assets/images/Gos.jpg"
         overlay_filter: 0.4
-        logo: "/assets/images/zastavka.jpg" # Подключили ваш логотип на латинице
-      author_profile: true # ВКЛЮЧАЕТ БОКОВУЮ ПАНЕЛЬ НА ВСЕХ СТРАНИЦАХ И ВСТАВКАХ
+        logo: "/assets/images/zastavka.jpg" 
+      author_profile: true
 
 # Активация встроенного поиска по сайту
 search: true
