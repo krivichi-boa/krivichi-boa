@@ -57,6 +57,7 @@ defaults:
       header:
         overlay_image: "/assets/images/Gos.jpg"
         overlay_filter: 0.4
+        logo: "/assets/images/Заставка.jpg" # Добавили маленькое лого поверх баннера
       author_profile: true # ВКЛЮЧАЕТ БОКОВУЮ ПАНЕЛЬ НА ВСЕХ СТРАНИЦАХ И ВСТАВКАХ
 
 # Активация встроенного поиска по сайту
