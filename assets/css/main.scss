@@ -1,38 +1,49 @@
 ---
-# Две линии из дефисов обязательны, чтобы Jekyll обработал этот файл!
+# Две линии из дефисов обязательны для компиляции!
 ---
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; 
 @import "minimal-mistakes"; 
 
-/* ХИТРЫЙ СПОСОБ: ПРИНУДИТЕЛЬНОЕ НАЛОЖЕНИЕ ПОДЛОЖКИ НА ВСЕ СЛОИ */
-body, 
-html, 
-#main, 
-.page, 
-.archive, 
-.initial-state, 
-.page__footer {
-  background-image: url('../images/bg.jpg') !important; /* Правильный относительный путь внутри папки assets */
+/* 1. ГЛАВНЫЙ ЗАДНИЙ ФОН САЙТА */
+body {
+  background-image: url('../images/bg.jpg') !important;
   background-position: center top !important;
   background-repeat: repeat !important;
   background-attachment: fixed !important;
-  background-size: auto !important;
-  background-color: transparent !important;
+  background-size: cover !important;
 }
 
-/* Белая контрастная подложка для левой панели */
-.sidebar {
-  background-color: #ffffff !important;
-  padding: 15px !important;
-  border-radius: 6px !important;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.08) !important;
+/* Очищаем фабричные фоны внутренних слоев, чтобы просвечивал наш bg.jpg */
+#main, 
+.page, 
+.archive,
+.initial-state {
+  background: transparent !important;
 }
 
-/* Белая контрастная подложка для самого текста статей */
+/* 2. УПОРЯДОЧИВАЕМ БЛОК СТАТЬИ (Делаем чистый белый лист для текста) */
 .page__inner-wrap {
+  background-color: #ffffff !important; /* Чистый белый непрозрачный фон */
+  padding: 40px !important;            /* Внутренние отступы, чтобы текст не прилипал к краям */
+  border-radius: 8px !important;         /* Красивое скругление углов */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15) !important; /* Мягкая тень для объема */
+  color: #222222 !important;            /* Делаем текст глубоким темным для идеальной читаемости */
+}
+
+/* 3. УПОРЯДОЧИВАЕМ ЛЕВУЮ ПАНЕЛЬ (Аватарка и Контакты) */
+.sidebar {
+  background-color: #ffffff !important; /* Тоже белый непрозрачный фон */
+  padding: 25px 20px !important;        /* Отступы вокруг аватарки и ссылок */
+  border-radius: 8px !important;         /* Скругление углов */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1) !important;  /* Легкая тень */
+}
+
+/* 4. УПОРЯДОЧИВАЕМ СТАТЬИ В СПИСКАХ НА СТРАНИЦАХ КАТЕГОРИЙ */
+.list__item {
   background-color: #ffffff !important;
-  padding: 30px !important;
-  border-radius: 8px !important;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.05) !important;
+  padding: 25px !important;
+  border-radius: 6px !important;
+  margin-bottom: 20px !important;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05) !important;
 }
