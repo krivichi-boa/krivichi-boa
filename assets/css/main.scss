@@ -69,3 +69,19 @@ th[id*="meta"] {
   margin: 0 !important;
 }
 
+/* НАЛОЖЕНИЕ ЛОГОТИПА ПОВЕРХ ГЛАВНОГО БАННЕРА */
+.page__hero-wrapper::before,
+.page__hero--overlay::before {
+  content: "" !important;
+  display: block !important;
+  width: 130px !important;       /* Ширина логотипа */
+  height: 130px !important;      /* Высота логотипа */
+  margin: 0 auto 15px auto !important; /* Отступы: центрируем и отталкиваем текст вниз */
+  background-image: url('../images/zastavka.jpg') !important; /* Путь к картинке */
+  background-size: cover !important;
+  background-position: center !important;
+  border-radius: 50% !important; /* Делаем логотип идеально круглым */
+  border: 3px solid #ffffff !important; /* Красивый белый ободок */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4) !important; /* Мягкая объемная тень */
+}
+
