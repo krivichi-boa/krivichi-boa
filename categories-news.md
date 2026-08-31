@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Новости проекта"
-permalink: /categories/news-list/
+permalink: /categories/news/
 author_profile: true
 header:
   overlay_image: /assets/images/main-banner.jpg
@@ -23,7 +23,6 @@ header:
     
     <p><a href="{{ post.url | relative_url }}" class="btn btn--info" style="border-radius: 4px;">Читать далее...</a></p>
     
-    <!-- Рисуем разделительную линию между новостями, кроме самой последней -->
     {% unless forloop.last %}
       <hr style="border: 0; height: 1px; background: #eee; margin: 30px 0;">
     {% endunless %}
