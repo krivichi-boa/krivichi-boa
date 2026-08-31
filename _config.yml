@@ -10,7 +10,7 @@ minimal_mistakes_skin: "mint"
 # Настройки автора блога (Нейтральные, без фото)
 author:
   name: "БОА"
-  avatar: [/krivichi-boa/assets/images/Заставка.jpg]
+  avatar: "/krivichi-boa/assets/images/Заставка.jpg"
   bio: "Блог об аквариумистике: фото аквариумов, обзоры растений и дневники ухода."
   location: "Кривичи"
   links:
