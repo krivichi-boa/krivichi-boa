@@ -56,8 +56,7 @@ defaults:
     values:
       header:
         overlay_image: "/assets/images/Gos.jpg"
-        overlay_filter: 0.4
-        logo: "/assets/images/zastavka.jpg" 
+        overlay_filter: 0.4 
       author_profile: true
 
 # Активация встроенного поиска по сайту
