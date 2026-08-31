@@ -1,18 +1,16 @@
 ---
-layout: default
-title: "Новости проекта"
+layout: single
+title: "Новости"
 permalink: /categories/news/
 author_profile: true
 header:
   overlay_image: /assets/images/main-banner.jpg
   overlay_filter: 0.4
 ---
+
 Самые свежие новости проекта, важные объявления, анонсы и события из мира аквариумистики.
 
-
-
-
-
+---
 
 {% assign category_posts = site.categories['news'] %}
 {% for post in category_posts %}
@@ -24,4 +22,3 @@ header:
   <p><a href="{{ post.url | relative_url }}" class="btn btn--info">Читать далее...</a></p>
   <hr>
 {% endfor %}
-
