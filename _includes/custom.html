@@ -18,45 +18,41 @@
   .page__footer-copyright { 
     display: none !important; 
   }
-
-  /* 5. ПОДЛАДЫВАЕМ ФОНОВОЕ ФОТО НА ВСЕ СТРАНИЦЫ САЙТА */
-body, .page, .archive, #main {
-  background-image: url('/krivichi-boa/assets/images/site-bg.jpg') !important;
-  background-position: center top !important;
-  background-repeat: repeat !important;
-  background-attachment: fixed !important;
-  background-size: auto !important;
-}
-
   
-  /* Делаем левую панель автора контрастной и белой */
+  /* 5. ПОЛНОЕ ЖЕЛЕЗНОЕ СКРЫТИЕ СЕРОГО ФОНА И ПОДСТАНОВКА ИЗОБРАЖЕНИЯ */
+  body, 
+  html, 
+  #main, 
+  .page, 
+  .archive, 
+  .initial-state, 
+  .page__footer,
+  .wide {
+    background-image: url('/assets/images/site-bg.jpg') !important;
+    background-position: center top !important;
+    background-repeat: repeat !important;
+    background-attachment: fixed !important;
+    background-size: auto !important;
+    background-color: transparent !important; /* Убираем серый фабричный цвет темы */
+  }
+  
+  /* Делаем левую панель автора контрастной, белой и непрозрачной */
   .sidebar {
     background-color: #ffffff !important;
     padding: 15px !important;
     border-radius: 6px !important;
     box-shadow: 0 4px 10px rgba(0,0,0,0.08) !important;
+    margin-top: 20px !important;
   }
 
-  /* Делаем подложку статей белой, чтобы текст отлично читался на фоне картинки */
+  /* Делаем подложку статей белой и непрозрачной, чтобы текст отлично читался */
   .page__inner-wrap {
     background-color: #ffffff !important;
     padding: 30px !important;
     border-radius: 8px !important;
     box-shadow: 0 4px 15px rgba(0,0,0,0.05) !important;
-
-    /* 2. ТОТАЛЬНОЕ УНИЧТОЖЕНИЕ НАДПИСИ И КНОПКИ FOLLOW (ФЛОУН) НА ВСЕХ СТРАНИЦАХ */
-  .author__urls-wrapper h3,
-  .author__urls-wrapper button, 
-  .author__urls-wrapper .btn,
-  .author__urls-wrapper span,
-  .author__urls-wrapper [class*="title"],
-  .author__urls.nav,
-  #sidebar-toggle {
-    display: none !important;
-    visibility: hidden !important;
-    opacity: 0 !important;
-    height: 0 !important;
-    padding: 0 !important;
-    margin: 0 !important;
+    margin-bottom: 30px !important;
   }
+
+  
 </style>
