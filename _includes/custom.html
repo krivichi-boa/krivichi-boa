@@ -19,7 +19,7 @@
     display: none !important; 
   }
   
-  /* 5. ПОЛНОЕ ЖЕЛЕЗНОЕ СКРЫТИЕ СЕРОГО ФОНА И ПОДСТАНОВКА ИЗОБРАЖЕНИЯ */
+  /* 5. ПОД ПОДЛОЖКУ ПОДСТАВЛЯЕМ КАРТИНКУ С УЧЕТОМ АДРЕСА РЕПОЗИТОРИЯ */
   body, 
   html, 
   #main, 
@@ -28,12 +28,12 @@
   .initial-state, 
   .page__footer,
   .wide {
-    background-image: url('/assets/images/site-bg.jpg') !important;
+    background-image: url('https://github.io') !important;
     background-position: center top !important;
     background-repeat: repeat !important;
     background-attachment: fixed !important;
     background-size: auto !important;
-    background-color: transparent !important; /* Убираем серый фабричный цвет темы */
+    background-color: transparent !important;
   }
   
   /* Делаем левую панель автора контрастной, белой и непрозрачной */
@@ -53,6 +53,5 @@
     box-shadow: 0 4px 15px rgba(0,0,0,0.05) !important;
     margin-bottom: 30px !important;
   }
-
   
 </style>
