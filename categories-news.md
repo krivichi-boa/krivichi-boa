@@ -4,7 +4,7 @@ title: "Новости"
 permalink: /categories/news/
 author_profile: true
 header:
-  overlay_image: /assets/images/main-banner.jpg
+  overlay_image: "/assets/images/Gos.jpg"
   overlay_filter: 0.4
 ---
 
