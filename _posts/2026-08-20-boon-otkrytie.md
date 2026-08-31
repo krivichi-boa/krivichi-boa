@@ -3,7 +3,6 @@ layout: single
 title: "Добро пожаловать на информационный ресурс БОА!"
 date: 2026-08-20
 category: news
-permalink: /categories/news/
 author_profile: true
 tags: [новости, сайт, запуск]
 ---
