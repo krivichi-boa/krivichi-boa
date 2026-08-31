@@ -1,21 +1,27 @@
 ---
-# Этот блок с черточками обязателен для работы стилей!
+# Две линии из дефисов обязательны, чтобы Jekyll обработал этот файл!
 ---
 
-@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // загрузка скина
-@import "minimal-mistakes"; // загрузка главных стилей темы
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; 
+@import "minimal-mistakes"; 
 
-/* НАШИ КАСТОМНЫЕ ИЗМЕНЕНИЯ ФОНА: */
-
-body, .page, .archive, #main {
-  background-image: url('/assets/images/site-bg.jpg') !important;
+/* ХИТРЫЙ СПОСОБ: ПРИНУДИТЕЛЬНОЕ НАЛОЖЕНИЕ ПОДЛОЖКИ НА ВСЕ СЛОИ */
+body, 
+html, 
+#main, 
+.page, 
+.archive, 
+.initial-state, 
+.page__footer {
+  background-image: url('../images/bg.jpg') !important; /* Правильный относительный путь внутри папки assets */
   background-position: center top !important;
   background-repeat: repeat !important;
   background-attachment: fixed !important;
   background-size: auto !important;
+  background-color: transparent !important;
 }
 
-/* Делаем левую панель белой и контрастной */
+/* Белая контрастная подложка для левой панели */
 .sidebar {
   background-color: #ffffff !important;
   padding: 15px !important;
@@ -23,7 +29,7 @@ body, .page, .archive, #main {
   box-shadow: 0 4px 10px rgba(0,0,0,0.08) !important;
 }
 
-/* Делаем подложку статей белой, чтобы текст легко читался */
+/* Белая контрастная подложка для самого текста статей */
 .page__inner-wrap {
   background-color: #ffffff !important;
   padding: 30px !important;
