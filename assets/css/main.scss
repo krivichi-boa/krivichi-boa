@@ -14,36 +14,47 @@ body {
   background-size: cover !important;
 }
 
-/* Очищаем фабричные фоны внутренних слоев, чтобы просвечивал наш bg.jpg */
+/* Очищаем старые прозрачности, чтобы они не ломали структуру */
 #main, 
 .page, 
 .archive,
-.initial-state {
+.initial-state,
+.wrapper {
   background: transparent !important;
 }
 
-/* 2. УПОРЯДОЧИВАЕМ БЛОК СТАТЬИ (Делаем чистый белый лист для текста) */
-.page__inner-wrap {
-  background-color: #ffffff !important; /* Чистый белый непрозрачный фон */
-  padding: 40px !important;            /* Внутренние отступы, чтобы текст не прилипал к краям */
-  border-radius: 8px !important;         /* Красивое скругление углов */
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15) !important; /* Мягкая тень для объема */
-  color: #222222 !important;            /* Делаем текст глубоким темным для идеальной читаемости */
-}
-
-/* 3. УПОРЯДОЧИВАЕМ ЛЕВУЮ ПАНЕЛЬ (Аватарка и Контакты) */
-.sidebar {
-  background-color: #ffffff !important; /* Тоже белый непрозрачный фон */
-  padding: 25px 20px !important;        /* Отступы вокруг аватарки и ссылок */
+/* 2. БЕЛАЯ ПОДЛОЖКА ПОД ТЕКСТ СТАТЬИ И КОНТЕНТ (Правая колонка) */
+.page__content,
+.archive__items-allowed,
+.home,
+.inner,
+article,
+[role="main"] > div:not(.sidebar) {
+  background-color: #ffffff !important; /* Плотный белый фон */
+  padding: 30px !important;            /* Внутренние отступы для текста */
   border-radius: 8px !important;         /* Скругление углов */
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1) !important;  /* Легкая тень */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15) !important; /* Объемная тень */
+  color: #222222 !important;            /* Глубокий темный цвет текста */
 }
 
-/* 4. УПОРЯДОЧИВАЕМ СТАТЬИ В СПИСКАХ НА СТРАНИЦАХ КАТЕГОРИЙ */
-.list__item {
-  background-color: #ffffff !important;
-  padding: 25px !important;
-  border-radius: 6px !important;
-  margin-bottom: 20px !important;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05) !important;
+/* 3. БЕЛАЯ ПОДЛОЖКА ПОД ЛЕВУЮ КОЛОНКУ (Аватарка и контакты) */
+.sidebar,
+aside.sidebar {
+  background-color: #ffffff !important;  /* Чистый белый фон */
+  padding: 25px 20px !important;         /* Отступы внутри панели */
+  border-radius: 8px !important;          /* Скругление углов */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1) !important;   /* Тень */
+  opacity: 1 !important;                 /* Запрещаем прозрачность */
+}
+
+/* Насильно перекрашиваем ссылки в левой панели в темный цвет, чтобы они читались */
+.sidebar, .sidebar a, .sidebar p, .sidebar span {
+  color: #222222 !important;
+}
+
+/* 4. ИСПРАВЛЯЕМ НАЛОЖЕНИЕ ВЕРХНЕГО БАННЕРА */
+.page__hero,
+.page__hero--overlay {
+  margin-bottom: 30px !important;
+  border-radius: 0 0 8px 8px !important;
 }
