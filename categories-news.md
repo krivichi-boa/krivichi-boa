@@ -18,6 +18,7 @@ author_profile: true
       <p style="color: #333333 !important; font-size: 16px; line-height: 1.6;">{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
       
       <p style="margin-bottom: 0;"><a href="{{ post.url | relative_url }}" class="btn btn--info" style="border-radius: 4px;">Читать далее...</a></p>
+      <p style="margin-bottom: 0;"><a href="{{ post.url | relative_url }}" class="btn btn--info" style="border-radius: 4px;">Читать далее...</a></p>
     </div>
   {% endfor %}
 </div>
