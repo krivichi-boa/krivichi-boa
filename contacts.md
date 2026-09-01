@@ -14,20 +14,20 @@ header:
 
 ### 📧 Электронная почта (Email)
 
-<a href="mailto:natart2012@gmail.com" class="btn btn--success" style="font-weight: bold; border-radius: 4px; padding: 10px 18px;"><i class="fas fa-fw fa-envelope"></i> Основной Email</a>  
-*Напишите нам на: **natart2012@gmail.com***
-
-<a href="mailto:barsik.vet@mail.ru" class="btn btn--success" style="font-weight: bold; border-radius: 4px; padding: 10px 18px;"><i class="fas fa-fw fa-envelope-open"></i> Дополнительный Email</a>  
+<a href="mailto:barsik.vet@mail.ru" class="btn btn--success" style="font-weight: bold; border-radius: 4px; padding: 10px 18px;"><i class="fas fa-fw fa-envelope"></i> Основной Email</a>  
 *Напишите нам на: **barsik.vet@mail.ru***
+
+<a href="mailto:natart2012@gmail.com" class="btn btn--success" style="font-weight: bold; border-radius: 4px; padding: 10px 18px;"><i class="fas fa-fw fa-envelope-open"></i> Дополнительный Email</a>  
+*Напишите нам на: **natart2012@gmail.com***
 
 ---
 
 ### 📞 Телефоны для связи
 
-<a href="tel:+375291097301" class="btn btn--warning" style="font-weight: bold; border-radius: 4px; padding: 10px 18px;"><i class="fas fa-fw fa-phone"></i> Телефон (Основной)</a>  
+<a href="tel:+375291097301" class="btn btn--warning" style="font-weight: bold; border-radius: 4px; padding: 10px 18px;"><i class="fas fa-fw fa-phone"></i> Телефон A1 </a>  
 *Наш номер: **+375 (29) 109-73-01***
 
-<a href="tel:+375297514227" class="btn btn--warning" style="font-weight: bold; border-radius: 4px; padding: 10px 18px;"><i class="fas fa-fw fa-phone-alt"></i> Телефон (Дополнительный)</a>  
+<a href="tel:+375297514227" class="btn btn--warning" style="font-weight: bold; border-radius: 4px; padding: 10px 18px;"><i class="fas fa-fw fa-phone-alt"></i> Телефон МТС </a>  
 *Наш номер: **+375 (29) 751-42-27***
 
 ---
