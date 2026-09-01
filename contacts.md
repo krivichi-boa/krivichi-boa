@@ -34,11 +34,11 @@ header:
 
 ### 💬 Социальные сети и мессенджеры
 
-<a href="https://t.me" class="btn btn--info" target="_blank" style="border-radius: 4px;"><i class="fab fa-fw fa-telegram"></i> Наш Telegram-канал</a>
+<a href="https://t.me/BelurysianBOA" class="btn btn--info" target="_blank" style="border-radius: 4px;"><i class="fab fa-fw fa-telegram"></i> Наш Telegram-канал</a>
 
-<a href="https://threads.net" class="btn btn--dark" target="_blank" style="border-radius: 4px;"><i class="fas fa-fw fa-at"></i> Мы в Threads</a>
+<a href="https://www.threads.com/@belarusianboa?xmt=AQG0VLhpHq0rrMS5rEXHX0U0zokEgUJH92fD2AHbNenwqpM" class="btn btn--dark" target="_blank" style="border-radius: 4px;"><i class="fas fa-fw fa-at"></i> Мы в Threads </a>
 
-<a href="https://instagram.com" class="btn btn--danger" target="_blank" style="border-radius: 4px;"><i class="fab fa-fw fa-instagram-square"></i> Наш Instagram</a>
+<a href="https://www.instagram.com/belarusianboa/?__pwa=1" class="btn btn--danger" target="_blank" style="border-radius: 4px;"><i class="fab fa-fw fa-instagram-square"></i> Наш Instagram</a>
 
 ---
 
