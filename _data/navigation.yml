@@ -14,7 +14,7 @@ main:
     url: /categories/our-animals
   - title: "О проекте"
     url: /about/
- - title: "Контакты"
+  - title: "Контакты"
     url: /contacts/
- - title: "<i class='fas fa-fw fa-search' aria-hidden='hidden'></i> Найти"
+  - title: "<i class='fas fa-fw fa-search' aria-hidden='hidden'></i> Найти"
     url: /search/
