@@ -4,7 +4,7 @@ title: "Стримы и мероприятия"
 permalink: /live/
 author_profile: true
 header:
-  overlay_image: /assets/images/ overlay_image:Gos.jpg
+  overlay_image: /assets/images/Gos.jpg
   overlay_filter: 0.4
 ---
 
