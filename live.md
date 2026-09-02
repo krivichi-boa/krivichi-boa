@@ -42,6 +42,12 @@ header:
 
 ### 📅 Ближайшие мероприятия и встречи
 
+<div style="background-color: #f9f9f9; padding: 20px; border-radius: 6px; border-left: 5px solid #4caf50; margin-bottom: 20px;">
+  <h4 style="margin-top: 0; color: #4caf50;">💻 Какие аквариумы бываю? 3 сентября 2026 г. в 6:55.</h4>
+  <p style="margin: 5px 0; font-size: 14px; color: #666;"><i class="fas fa-calendar-alt"></i> <b>Тип:</b> Прямой эфир в Telegram</p>
+  <p style="margin: 10px 0 0 0; font-size: 15px;">Аквариумы травники,биотопы,разводные,креветочники.3 сентября 2026г. на Белорусском Обществе Аквариумистов.</p>
+</div>
+
 <div style="background-color: #f9f9f9; padding: 20px; border-radius: 6px; border-left: 5px solid #00bcd4; margin-bottom: 20px;">
   <h4 style="margin-top: 0; color: #00bcd4;">Онлайн-встреча "Водный баланс аквариума и отчего зависит мутность воды" 02.09.2026 в 20:00. </h4>
   <p style="margin: 5px 0; font-size: 14px; color: #666;"><i class="fas fa-calendar-alt"></i> <b>Дата:</b> 2 сентября 2026</p>
