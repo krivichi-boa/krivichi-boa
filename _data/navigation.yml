@@ -6,12 +6,14 @@ main:
     url: /categories/news/
   - title: "Мои аквариумы"
     url: /categories/my-tanks/
+  - title: "Наши животные"
+    url: /categories/our-animals/
   - title: "Заметки / Дневник"
     url: /categories/diary/
   - title: "Рыбки и растения"
     url: /categories/flora-fauna/
-  - title: "Наши животные"
-    url: /categories/our-animals
+  - title: "Стримы и мероприятия"
+    url: /live/
   - title: "О проекте"
     url: /about/
   - title: "Контакты"
