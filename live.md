@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "Трансляции и встречи клуба"
+title: "Стримы и мероприятия"
 permalink: /live/
 author_profile: true
 header:
@@ -11,6 +11,32 @@ header:
 Добро пожаловать в интерактивный раздел Белорусского общества аквариумистов! Здесь мы публикуем анонсы живых встреч, ссылки на онлайн-семинары, стримы и вебинары, где обсуждаем уход за аквариумами, акваскейпинг и разведение редких видов рыб.
 
 ---
+### 📢 Прямые трансляции в Telegram-канале
+
+<!-- КРАСИВЫЙ ИНТЕРАКТИВНЫЙ БЛОК ДЛЯ ТГ-СТРИМОВ -->
+<div style="background: linear-gradient(135deg, #24a1de 0%, #1e88e5 100%) !important; padding: 30px !important; border-radius: 8px !important; box-shadow: 0 6px 20px rgba(36,161,222,0.3) !important; color: #ffffff !important; margin-bottom: 35px !important; position: relative; overflow: hidden;">
+  
+  <!-- Фоновая декоративная иконка самолетика -->
+  <i class="fab fa-telegram-plane" style="position: absolute; right: -20px; bottom: -20px; font-size: 150px; opacity: 0.12; transform: rotate(-15deg);"></i>
+
+  <div style="position: relative; z-index: 2;">
+    <span style="background-color: #ff3d00 !important; color: #ffffff !important; padding: 4px 10px !important; border-radius: 4px !important; font-size: 11px !important; font-weight: bold !important; text-transform: uppercase !important; letter-spacing: 1px !important; display: inline-block !important; margin-bottom: 15px !important; box-shadow: 0 2px 5px rgba(255,61,0,0.4) !important;">
+      🔴 LIVE В TELEGRAM
+    </span>
+    
+    <h3 style="margin: 0 0 10px 0 !important; color: #ffffff !important; font-size: 22px !important; font-weight: bold !important; border: none !important; padding: 0 !important;">
+      Присоединяйтесь к нашему живому голосовому или видеочату!
+    </h3>
+    
+    <p style="margin: 0 0 20px 0 !important; font-size: 15px !important; line-height: 1.5 !important; color: #e3f2fd !important;">
+      Мы регулярно запускаем прямые эфиры прямо внутри нашего Telegram-канала Белорусского Общества Аквариумистов. Там мы общаемся голосом в реальном времени, транслируем экраны, разбираем аквариумы подписчиков и мгновенно отвечаем на вопросы в чате трансляции.
+    </p>
+    
+    <a href="https://t.me/BelurysianBOA?livestream" target="_blank" style="background-color: #ffffff !important; color: #24a1de !important; display: inline-block !important; padding: 12px 24px !important; font-weight: bold !important; border-radius: 6px !important; text-decoration: none !important; box-shadow: 0 4px 15px rgba(0,0,0,0.15) !important; font-size: 15px !important; transition: transform 0.2s !important;">
+      <i class="fas fa-video"></i> Войти в прямой эфир ТГ
+    </a>
+  </div>
+</div>
 
 ### 🔴 Прямой эфир / Прошедшие трансляции
 
