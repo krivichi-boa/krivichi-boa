@@ -46,7 +46,7 @@ header:
   <h4 style="margin-top: 0; color: #4caf50;">💻 Какие аквариумы бываю? 3 сентября 2026 г. в 20:20.</h4>
   <p style="margin: 5px 0; font-size: 14px; color: #666;"><i class="fas fa-calendar-alt"></i> <b>Тип:</b> Прямой эфир в Telegram</p>
   <p style="margin: 10px 0 0 0; font-size: 15px;">Аквариумы травники,биотопы,разводные,креветочники.3 сентября 2026г.на</p>              <p style="margin: 10px 0 0 0; font-size: 15px;"> Белорусском Обществе Аквариумистов.</p>
-<a href="https://github.io" class="btn btn--info" download><i class="fas fa-file-download"></i> Скачать таблицу «Параметры воды» (DOCX)</a>
+<a href="{{ '/assets/files/voda.docx' | relative_url }}" class="btn btn--info" download><i class="fas fa-file-download"></i> Скачать таблицу «Параметры воды»</a>
 
 </div>
 
