@@ -46,7 +46,12 @@ header:
   <h4 style="margin-top: 0; color: #4caf50;">💻 Какие аквариумы бываю? 3 сентября 2026 г. в 20:20.</h4>
   <p style="margin: 5px 0; font-size: 14px; color: #666;"><i class="fas fa-calendar-alt"></i> <b>Тип:</b> Прямой эфир в Telegram</p>
   <p style="margin: 10px 0 0 0; font-size: 15px;">Аквариумы травники,биотопы,разводные,креветочники.3 сентября 2026г.на</p>              <p style="margin: 10px 0 0 0; font-size: 15px;"> Белорусском Обществе Аквариумистов.</p>
- <a href="/assets/files/parametry-vody.docx" class="btn btn--info" download><i class="fas fa-file-download"></i> Скачать таблицу параметров</a> 
+ ### 📝 Полезные материалы для скачивания:
+
+Вы можете скачать подробную таблицу-памятку по оптимальной жесткости, кислотности и температуре воды для разных видов рыб:
+
+<a href="/assets/files/parametry-vody.docx" class="btn btn--info" download><i class="fas fa-file-download"></i> Скачать таблицу «Параметры воды» (DOCX)</a>
+
 </div>
 
 <div style="background-color: #f9f9f9; padding: 20px; border-radius: 6px; border-left: 5px solid #00bcd4; margin-bottom: 20px;">
