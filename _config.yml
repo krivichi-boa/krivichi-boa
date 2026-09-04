@@ -26,6 +26,9 @@ author:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram-square"
       url: "https://instagram.com"
+    - label: "Facebook"
+      icon: "fab fa-fw fa-facebook"
+      url: "https://facebook.com"
 
 # Подключаемые системные плагины
 plugins:
