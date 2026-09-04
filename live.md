@@ -37,6 +37,23 @@ header:
     </a>
   </div>
 </div>
+### 🔴 Прямой эфир БОА на Facebook
+
+*Нажмите кнопку воспроизведения по центру экрана, чтобы запустить трансляцию. Если эфир сейчас не идет, здесь будет доступно наше последнее видео.*
+
+<!-- АДАПТИВНОЕ ОКНО ДЛЯ ЖИВОГО ЭФИРА FACEBOOK -->
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.15); margin-bottom: 30px;">
+  <iframe 
+    src="https://facebook.com" 
+    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" 
+    scrolling="no" 
+    frameborder="0" 
+    allowfullscreen="true" 
+    allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
+  </iframe>
+</div>
+
+---
 
 
 
