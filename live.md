@@ -44,7 +44,7 @@ header:
 <!-- АДАПТИВНОЕ ОКНО ДЛЯ ЖИВОГО ЭФИРА FACEBOOK -->
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.15); margin-bottom: 30px;">
   <iframe 
-    src="https://facebook.com" 
+    src="https://www.facebook.com/lmmdog4verma" 
     style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" 
     scrolling="no" 
     frameborder="0" 
