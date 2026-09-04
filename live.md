@@ -42,6 +42,13 @@ header:
 
 ### 📅 Ближайшие мероприятия и встречи
 
+<div style="background-color: #f9f9f9; padding: 20px; border-radius: 6px; border-left: 5px solid #00bcd4; margin-bottom: 20px;">
+  <h4 style="margin-top: 0; color: #d4d000;">🌱 Какие аквариумы бываю? .</h4>
+  <p style="margin: 5px 0; font-size: 14px; color: #666;"><i class="fas fa-calendar-alt"></i> <b>Дата:</b> 4 сентября 2026 г. в 19:00</p>
+  <p style="margin: 5px 0; font-size: 14px; color: #666;"><i class="fas fa-map-marker-alt"></i> <b>Место:</b>Онлайн-встреча в ТГ.</p>
+  <p style="margin: 10px 0 0 0; font-size: 15px;">Разберём виды аквариумы.</p>
+</div>
+
 <div style="background-color: #f9f9f9; padding: 20px; border-radius: 6px; border-left: 5px solid #4caf50; margin-bottom: 20px;">
   <h4 style="margin-top: 0; color: #4caf50;">💻 Какие аквариумы бываю? 3 сентября 2026 г. в 21:30.</h4>
   <p style="margin: 5px 0; font-size: 14px; color: #666;"><i class="fas fa-calendar-alt"></i> <b>Тип:</b> Прямой эфир в Telegram</p>
