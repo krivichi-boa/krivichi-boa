@@ -11,6 +11,17 @@ header:
 Добро пожаловать в интерактивный раздел Белорусского общества аквариумистов! Здесь мы публикуем анонсы живых встреч, ссылки на онлайн-семинары, стримы и вебинары, где обсуждаем уход за аквариумами, акваскейпинг и разведение редких видов рыб.
 
 ---
+### Прямой эфир на Ютубе
+<!-- АДАПТИВНОЕ ОКНО ДЛЯ ПРЯМЫХ ЭФИРОВ И ВИДЕО YOUTUBE -->
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.15); margin-bottom: 35px;">
+  <iframe 
+    src="https://youtube.com//UCZs9x8Z2C3NwX-LoCgEIrCQ" 
+    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+    allowfullscreen>
+  </iframe>
+</div>
+
 ### 📢 Прямые трансляции в Telegram-канале
 
 <!-- КРАСИВЫЙ ИНТЕРАКТИВНЫЙ БЛОК ДЛЯ ТГ-СТРИМОВ -->
