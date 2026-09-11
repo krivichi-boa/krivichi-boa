@@ -15,7 +15,7 @@ header:
 <!-- АДАПТИВНОЕ ОКНО ДЛЯ ПРЯМЫХ ЭФИРОВ И ВИДЕО YOUTUBE -->
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.15); margin-bottom: 35px;">
   <iframe 
-    src="https://youtube.com//embed/live_stream?channel=UCZs9x8Z2C3NwX-LoCgEIrCQ" 
+    src="https://youtube.com/embed/live_stream?channel=UCZs9x8Z2C3NwX-LoCgEIrCQ" 
     style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" 
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
     allowfullscreen>
