@@ -12,7 +12,8 @@ header:
 
 ---
 ### Прямой эфир на Ютубе
-<iframe width="560" height="315" src="https://youtube.com//UCZs9x8Z2C3NwX-LoCgEIrCQlive_stream?channel=" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://youtube.com" frameborder="0" allowfullscreen></iframe>
+
 
 
 ### 📢 Прямые трансляции в Telegram-канале
