@@ -12,7 +12,8 @@ header:
 
 ---
 ### Прямой эфир на Ютубе
-<iframe width="560" height="315" src="https://youtube.com/embed/live_stream?channel=Mm41ft-VumE" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://youtube.com" frameborder="0" allow="accelerometer; &autoplay=1; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
 
 
 
