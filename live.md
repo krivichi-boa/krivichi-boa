@@ -15,6 +15,33 @@ header:
 <iframe width="560" height="315" src="https://youtube.com/embed/live_stream?channel=UCZs9x8Z2C3NwX-LoCgEIrCQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 
+<div class="video-container">
+  <iframe 
+    src="https://youtube.com/embed/live_stream?channel=UCZs9x8Z2C3NwX-LoCgEIrCQ" allow="accelerometer; &autoplay=1; &mute=1; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+    allowfullscreen>
+  </iframe>
+</div>
+
+<style>
+  .video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* Жестко держит пропорции 16:9 */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    background: #000; /* Черный фон пока стрим загружается */
+    border-radius: 8px; /* Красивые скругленные углы плеера */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15); /* Мягкая тень под видео */
+  }
+  .video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+</style>
 
 
 
