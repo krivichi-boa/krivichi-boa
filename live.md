@@ -29,7 +29,7 @@ header:
     height: 0;
     overflow: hidden;
     max-width: 100%;
-    background: #000; /* Черный фон пока стрим загружается */
+    background: #0c8f13; /* Черный фон пока стрим загружается */
     border-radius: 8px; /* Красивые скругленные углы плеера */
     box-shadow: 0 4px 15px rgba(0,0,0,0.15); /* Мягкая тень под видео */
   }
