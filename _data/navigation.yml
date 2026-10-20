@@ -18,5 +18,7 @@ main:
     url: /about/
   - title: "Контакты"
     url: /contacts/
+  - title: "Аккаунт"
+    url: /account/
   - title: "<i class='fas fa-fw fa-search' aria-hidden='hidden'></i> Найти"
     url: /search/
