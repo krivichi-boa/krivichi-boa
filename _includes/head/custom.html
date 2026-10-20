@@ -33,53 +33,6 @@ s0.parentNode.insertBefore(s1,s0);
 })();
 </script>
 <!--End of Tawk.to Script-->
-<script>
-  // Автоматически подгружаем список одобренных пользователей из вашего файла users.yml
-  const siteUsers = [
-    {% for user in site.data.users %}
-      { username: "{{ user.username }}", password: "{{ user.password }}", name: "{{ user.name }}", avatar: "{{ user.avatar }}" }{% unless forloop.last %},{% endunless %}
-    {% endfor %}
-  ];
 
-  function checkLoginStatus() {
-    const loggedUser = localStorage.getItem("boa_user");
-    const loginButtons = document.querySelectorAll('a[href*="/contacts/"], .login-button');
-
-    if (loggedUser) {
-      const user = JSON.parse(loggedUser);
-      loginButtons.forEach(btn => {
-        btn.innerHTML = `<img src="${user.avatar}" style="width:20px; border-radius:50%; margin-right:5px; vertical-align:middle;"> ${user.name}`;
-        btn.href = "#";
-        btn.onclick = function(e) {
-          e.preventDefault();
-          if (confirm("Выйти из личного кабинета БОА?")) {
-            localStorage.removeItem("boa_user");
-            window.location.reload();
-          }
-        };
-      });
-    } else {
-      loginButtons.forEach(btn => {
-        btn.onclick = function(e) {
-          e.preventDefault();
-          const userLogin = prompt("Введите ваш Логин для входа в БОА:");
-          if (!userLogin) return;
-          const userPass = prompt("Введите ваш Пароль:");
-          
-          const foundUser = siteUsers.find(u => u.username === userLogin.trim().toLowerCase() && u.password === userPass.trim());
-          
-          if (foundUser) {
-            localStorage.setItem("boa_user", JSON.stringify(foundUser));
-            alert(`Добро пожаловать, ${foundUser.name}! Вы успешно вошли в кабинет.`);
-            window.location.reload();
-          } else {
-            alert("Ошибка: Неверный логин или пароль! Доступ отклонен.");
-          }
-        };
-      });
-    }
-  }
-
-  document.addEventListener("DOMContentLoaded", checkLoginStatus);
 </script>
 
