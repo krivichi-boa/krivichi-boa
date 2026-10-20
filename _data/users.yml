@@ -1,0 +1,10 @@
+# Список одобренных аквариумистов БОА для личных кабинетов
+- username: "yulia"
+  password: "123"
+  name: "Юлия"
+ avatar: "https://gravatar.com"
+
+- username: "olga"
+  password: "555"
+  name: "Ольга"
+  avatar: "https://gravatar.com"
