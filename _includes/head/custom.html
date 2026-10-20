@@ -33,6 +33,22 @@ s0.parentNode.insertBefore(s1,s0);
 })();
 </script>
 <!--End of Tawk.to Script-->
+<script>
+  function syncMenuLoginButton() {
+    const activeUser = localStorage.getItem("boa_user");
+    // Находим вкладку Аккаунт в верхнем меню
+    const accountMenuLinks = document.querySelectorAll('a[href*="/account/"]');
+
+    if (activeUser && accountMenuLinks.length > 0) {
+      const parsed = JSON.parse(activeUser);
+      accountMenuLinks.forEach(link => {
+        // Подставляем аватарку и имя вошедшего человека прямо в шапку сайта
+        link.innerHTML = `<img src="${parsed.avatar}" style="width:20px; height:20px; border-radius:50%; margin-right:5px; vertical-align:middle; object-fit:cover;"> ${parsed.name}`;
+      });
+    }
+  }
+  document.addEventListener("DOMContentLoaded", syncMenuLoginButton);
+</script>
 
 
 
