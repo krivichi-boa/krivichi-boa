@@ -17,8 +17,8 @@ header:
 <a href="mailto:barsik.vet@mail.ru" class="btn btn--success" style="font-weight: bold; border-radius: 4px; padding: 10px 18px;"><i class="fas fa-fw fa-envelope"></i> Основной Email</a>  
 *Напишите нам на: **barsik.vet@mail.ru***
 
-<a href="mailto:natart2012@gmail.com" class="btn btn--success" style="font-weight: bold; border-radius: 4px; padding: 10px 18px;"><i class="fas fa-fw fa-envelope-open"></i> Дополнительный Email</a>  
-*Напишите нам на: **natart2012@gmail.com***
+<a href="mailto:barsik.vet2@gmail.com" class="btn btn--success" style="font-weight: bold; border-radius: 4px; padding: 10px 18px;"><i class="fas fa-fw fa-envelope-open"></i> Дополнительный Email</a>  
+*Напишите нам на: **barsik.vet2@gmail.com***
 
 ---
 
