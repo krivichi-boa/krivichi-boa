@@ -25,7 +25,7 @@ header:
     <img id="user-card-avatar" src="" style="width: 80px; height: 80px; border-radius: 50%; border: 3px solid #00bcd4; box-shadow: 0 4px 10px rgba(0,0,0,0.1); object-fit: cover;">
     <div>
       <h3 style="margin: 0; color: #00bcd4; font-size: 22px;" id="user-card-name"></h3>
-      <p style="margin: 5px 0 0 0; color: #666; font-size: 14px;"><i class="fas fa-id-card"></i> Статус: <b>Одобренный участник БОА</b></p>
+      <p style="margin: 5px 0 0 0; color: #666; font-size: 14px;"><i class="fas fa-id-card"></i> Статус: <b>Одобренный участник Белорусского общества аквариумистов</b></p>
       <p style="margin: 3px 0 0 0; color: #666; font-size: 14px;"><i class="fas fa-map-marker-alt"></i> Регион: <b>Беларусь</b></p>
     </div>
   </div>
