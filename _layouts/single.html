@@ -37,30 +37,15 @@ layout: default
           </aside>
         {% endif %}
         {{ content }}
-       <!-- УМНАЯ ПРОВЕРКА ДОСТУПА К ТЕКСТУ ПОСТА -->
-{% if page.private == true %}
-  <div id="private-article-block" style="display: none;">
-    {{ content }}
-  </div>
-  
-  <div id="lock-warning-block" style="display: block; background-color: #fff5f5 !important; border-left: 5px solid #ff3d00 !important; padding: 20px !important; border-radius: 6px !important; margin: 20px 0 !important;">
-    <h3 style="color: #ff3d00; margin-top: 0;"><i class="fas fa-lock"></i> Доступ ограничен</h3>
-    <p style="margin-bottom: 0; color: #333;">Эта публикация содержит закрытые материалы Белорусского общества аквариумистов. Пожалуйста, перейдите во вкладку <b><a href="/account/" style="color: #00bcd4;">Аккаунт</a></b> и авторизуйтесь под своим клубным паролем, чтобы прочесть статью.</p>
-  </div>
+    {% if page.link %}<div><a href="{{ page.link }}" class="btn btn--primary">{{ site.data.ui-text[site.locale].ext_link_label | default: "Direct Link" }}</a></div>{% endif %}
+      </section>
 
-  <script>
-    document.addEventListener("DOMContentLoaded", function() {
-      // Проверяем, авторизован ли пользователь в браузере
-      if (localStorage.getItem("boa_user")) {
-        document.getElementById("private-article-block").style.display = "block";
-        document.getElementById("lock-warning-block").style.display = "none";
-      }
-    });
-  </script>
-{% else %}
-  <!-- Если пост обычный — выводим без ограничений -->
-  {{ content }}
-{% endif %}
+
+
+  
+      <footer class="page__meta">
+        {% if site.data.ui-text[site.locale].meta_label %}
+          <h4 class="page__meta-title">{{ site.data.ui-text[site.locale].meta_label }}</h4>
 
     </div>
   </article>
