@@ -29,16 +29,16 @@ layout: default
 
       <section class="page__content e-content" itemprop="articleBody">
         
-        <!-- АВТОМАТИЧЕСКАЯ СИСТЕМА СКРЫТИЯ КОНТЕНТА -->
+        <!-- АВТОМАТИЧЕСКАЯ СИСТЕМА СКРЫТИЯ КОНТЕНТА БОА -->
         {% if page.private == true %}
           
-          <!-- Блок с предупреждением для гостей -->
+          <!-- Красная карточка с замком для гостей -->
           <div id="lock-warning-block" style="display: block; background-color: #fff5f5 !important; border-left: 5px solid #ff3d00 !important; padding: 20px !important; border-radius: 6px !important; margin: 20px 0 !important;">
             <h3 style="color: #ff3d00; margin-top: 0;"><i class="fas fa-lock"></i> Доступ ограничен</h3>
-            <p style="margin-bottom: 0; color: #333;">Эта публикация содержит закрытые материалы Белорусского общества аквариумистов. Пожалуйста, перейдите во вкладку <b><a href="/account/" style="color: #00bcd4;">Аккаунт</a></b> и авторизуйтесь под своим клубным паролем, чтобы прочесть статью.</p>
+            <p style="margin-bottom: 0; color: #333;">Эта публикация содержит закрытые материалы Белорусского общества аквариумистов. Пожалуйста, перейдите во вкладку <b><a href="/account/" style="color: #00bcd4; font-weight: bold;">Аккаунт</a></b> и авторизуйтесь под своим клубным паролем, чтобы прочесть статью.</p>
           </div>
 
-          <!-- Контент, который увидят только авторизованные -->
+          <!-- Скрытый блок текста для участников -->
           <div id="private-article-block" style="display: none;">
             {{ content }}
           </div>
@@ -47,13 +47,18 @@ layout: default
             document.addEventListener("DOMContentLoaded", function() {
               if (localStorage.getItem("boa_user")) {
                 document.getElementById("private-article-block").style.display = "block";
-                document.getElementById("lock-warning-block").style.display = "none";
+                document.getElementById("lock-warning-block").style.none = "none";
+                // Исправление для Safari/старых браузеров
+                const privBlock = document.getElementById("private-article-block");
+                const warnBlock = document.getElementById("lock-warning-block");
+                if (privBlock) privBlock.setAttribute("style", "display: block !important;");
+                if (warnBlock) warnBlock.setAttribute("style", "display: none !important;");
               }
             });
           </script>
 
         {% else %}
-          <!-- Если у поста нет параметра private: true — выводим его как обычно -->
+          <!-- Если пост публичный — выводим стандартно один раз -->
           {{ content }}
         {% endif %}
 
@@ -76,7 +81,4 @@ layout: default
   {% if page.id and page.related %}
     {% include page__related.html %}
   {% endif %}
-</div>
-
-  {% comment %}<!-- Блок кнопок навигации полностью удален отсюда навсегда -->{% endcomment %}
 </div>
