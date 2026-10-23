@@ -38,7 +38,7 @@ layout: default
             <p style="margin-bottom: 0; color: #333;">Эта публикация содержит закрытые материалы Белорусского общества аквариумистов. Пожалуйста, перейдите во вкладку <b><a href="/account/" style="color: #00bcd4; font-weight: bold;">Аккаунт</a></b> и авторизуйтесь под своим клубным паролем, чтобы прочесть статью.</p>
           </div>
 
-          <!-- Скрытый block текста для участников -->
+          <!-- Скрытый блок текста для участников -->
           <div id="private-article-block" style="display: none;">
             {{ content }}
           </div>
@@ -48,8 +48,12 @@ layout: default
               if (localStorage.getItem("boa_user")) {
                 const privBlock = document.getElementById("private-article-block");
                 const warnBlock = document.getElementById("lock-warning-block");
-                if (privBlock) privBlock.setAttribute("style", "display: block !important;");
-                if (warnBlock) warnBlock.setAttribute("style", "display: none !important;");
+                if (privBlock) {
+                  privBlock.setAttribute("style", "display: block !important;");
+                }
+                if (warnBlock) {
+                  warnBlock.setAttribute("style", "display: none !important;");
+                }
               }
             });
           </script>
