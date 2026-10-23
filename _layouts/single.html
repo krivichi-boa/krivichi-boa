@@ -2,6 +2,12 @@
 layout: default
 ---
 
+{% if page.header.overlay_image or page.header.overlay_color %}
+  {% include page__header.html %}
+{% elsif page.header.video.id and page.header.video.provider %}
+  {% include page__header.html %}
+{% endif %}
+
 <div id="main" role="main">
   {% include sidebar.html %}
 
@@ -12,12 +18,14 @@ layout: default
     {% if page.last_modified_at %}<meta itemprop="dateModified" content="{{ page.last_modified_at | date_to_xmlschema }}">{% endif %}
 
     <div class="page__inner-wrap">
-      <header>
-        {% if page.title %}<h1 id="page-title" class="page__title p-name" itemprop="headline">
-          <a href="{{ page.url | relative_url }}" class="u-url">{{ page.title | markdownify | strip_html }}</a>
-        </h1>{% endif %}
-        {% include page__meta.html %}
-      </header>
+      {% unless page.header.overlay_image or page.header.overlay_color %}
+        <header>
+          {% if page.title %}<h1 id="page-title" class="page__title p-name" itemprop="headline">
+            <a href="{{ page.url | relative_url }}" class="u-url">{{ page.title | markdownify | strip_html }}</a>
+          </h1>{% endif %}
+          {% include page__meta.html %}
+        </header>
+      {% endunless %}
 
       <section class="page__content e-content" itemprop="articleBody">
         
