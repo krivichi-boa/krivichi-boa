@@ -15,7 +15,7 @@ header:
   <hr style="border: 0; height: 1px; background: #eee; margin: 20px 0;">
   
   <button id="login-trigger-btn" class="btn btn--info" style="font-weight: bold; border-radius: 4px; padding: 12px 24px; font-size: 16px;">
-    <i class="fas fa-sign-in-alt"></i> Войти в аккаунт БОА
+    <i class="fas fa-sign-in-alt"></i> Войти в аккаунт Белорусского общества аквариумистов
   </button>
 </div>
 
