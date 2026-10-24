@@ -34,7 +34,7 @@ header:
 
   <h3>⚙️ Доступные функции клуба:</h3>
   <ul>
-    <li>Просмотр закрытых материалов и архивов (В разработке)</li>
+    <li>Просмотр закрытых материалов и архивов (разработан)</li>
     <li>Доступ к специальным файлам и памяткам для скачивания</li>
     <li>Прямая приоритетная связь с администрацией</li>
   </ul>
@@ -75,9 +75,9 @@ header:
 
   // Обработчик кнопки Войти
   document.getElementById("login-trigger-btn").addEventListener("click", function() {
-    const loginInp = prompt("Введите ваш Логин участников БОА:");
+    const loginInp = prompt("Введите ваш логин участника общества БОА:");
     if (!loginInp) return;
-    const passInp = prompt("Введите ваш Пароль доступа:");
+    const passInp = prompt("Введите ваш пароль доступа:");
     if (!passInp) return;
 
     const matched = accountsBase.find(u => u.username === loginInp.trim().toLowerCase() && u.password === passInp.trim());
