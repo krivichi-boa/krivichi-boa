@@ -50,31 +50,55 @@ s0.parentNode.insertBefore(s1,s0);
   document.addEventListener("DOMContentLoaded", syncMenuLoginButton);
 </script>
 
-<!-- УНИВЕРСАЛЬНАЯ АВТОМАТИЧЕСКАЯ СИСТЕМА СКРЫТИЯ СТАТЕЙ БОА -->
+<!-- СВЕРХНАДЕЖНАЯ АВТОМАТИЧЕСКАЯ СИСТЕМА СКРЫТИЯ СТАТЕЙ БОА -->
 <script>
   document.addEventListener("DOMContentLoaded", function() {
-    // Проверяем, задана ли в шапке статьи метка приватности в коде Jekyll
+    // Проверяем, включен ли параметр private в шапке Jekyll
     {% if page.private == true %}
-      const articleContent = document.querySelector('.page__content') || document.querySelector('.e-content');
       
-      if (articleContent) {
-        // Если пользователь НЕ авторизован в системе — прячем текст и выводим красную карточку
-        if (!localStorage.getItem("boa_user")) {
-          articleContent.style.display = "none";
-          
-          const lockNotice = document.createElement('div');
-          lockNotice.innerHTML = `
-            <div style="background-color: #fff5f5 !important; border-left: 5px solid #ff3d00 !important; padding: 20px !important; border-radius: 6px !important; margin: 20px 0 !important; display: block !important;">
-              <h3 style="color: #ff3d00; margin-top: 0;"><i class="fas fa-lock"></i> Доступ ограничен</h3>
-              <p style="margin-bottom: 0; color: #333;">Эта публикация содержит закрытые материалы Белорусского общества аквариумистов. Пожалуйста, перейдите во вкладку <b><a href="/account/" style="color: #00bcd4; font-weight: bold;">Аккаунт</a></b> и авторизуйтесь под своим клубным паролем, чтобы прочесть статью.</p>
-            </div>
-          `;
-          articleContent.parentNode.insertBefore(lockNotice, articleContent);
+      // Если пользователь АВТОРИЗОВАН — ничего не делаем, даем читать
+      if (localStorage.getItem("boa_user")) {
+        return; 
+      }
+
+      // Если пользователь НЕ авторизован — запускаем жесткое скрытие контента
+      // Ищем все возможные контейнеры текста, которые использует тема Minimal Mistakes
+      const contentSelectors = [
+        '.page__content', 
+        '.e-content', 
+        'section[itemprop="articleBody"]', 
+        '.archive__item-excerpt',
+        '#main'
+      ];
+      
+      let mainContentBox = null;
+      
+      // Ищем первый подошедший селектор темы
+      for (let selector of contentSelectors) {
+        let box = document.querySelector(selector);
+        if (box && selector === '#main') {
+          // Если ищем в главном контейнере, то берем внутреннюю wrap-часть
+          mainContentBox = box.querySelector('.page__inner-wrap') || box;
+          break;
+        } else if (box) {
+          mainContentBox = box;
+          break;
         }
+      }
+
+      if (mainContentBox) {
+        // Полностью очищаем текст статьи и заменяем его на красную карточку с замком
+        mainContentBox.innerHTML = `
+          <div id="lock-warning-block" style="background-color: #fff5f5 !important; border-left: 5px solid #ff3d00 !important; padding: 20px !important; border-radius: 6px !important; margin: 20px 0 !important; display: block !important; clear: both !important;">
+            <h3 style="color: #ff3d00; margin-top: 0;"><i class="fas fa-lock"></i> Доступ ограничен</h3>
+            <p style="margin-bottom: 0; color: #333; font-size: 15px;">Эта публикация содержит закрытые материалы Белорусского общества аквариумистов. Пожалуйста, перейдите во вкладку <b><a href="/account/" style="color: #00bcd4; font-weight: bold; text-decoration: underline;">Аккаунт</a></b> и авторизуйтесь под своим клубным паролем, чтобы прочесть статью.</p>
+          </div>
+        `;
       }
     {% endif %}
   });
 </script>
+
 <!-- СКРЫТИЕ СИСТЕМНЫХ КНОПОК ПАГИНАЦИИ PREVIOUS И NEXT -->
 <style>
   .pagination, 
