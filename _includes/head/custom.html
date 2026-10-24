@@ -50,44 +50,6 @@ s0.parentNode.insertBefore(s1,s0);
   document.addEventListener("DOMContentLoaded", syncMenuLoginButton);
 </script>
 
-<!-- УЛЬТИМАТИВНАЯ АВТОМАТИЧЕСКАЯ СИСТЕМА СКРЫТИЯ КОНТЕНТА БОА -->
-<script>
-  (function() {
-    // 1. Проверяем параметр приватности из Front Matter через движок Jekyll
-    const isPrivatePage = {% if page.private == true %}true{% else %}false{% endif %};
-    
-    if (!isPrivatePage) return; // Если страница обычная — ничего не делаем
-
-    // 2. Проверяем авторизацию пользователя в браузере
-    const isAuthorized = localStorage.getItem("boa_user");
-    if (isAuthorized) return; // Если вошел — даем полный доступ
-
-    // 3. Если гость — внедряем жесткое CSS-скрытие контента еще ДО полной прогрузки страницы
-    const styleHide = document.createElement('style');
-    styleHide.innerHTML = `
-      .page__content, .e-content, .archive, .entries-list, article, section[itemprop="articleBody"] { 
-        display: none !important; 
-      }
-    `;
-    document.head.appendChild(styleHide);
-
-    // 4. Как только структура сайта готова — заменяем скрытый блок красивым замком
-    document.addEventListener("DOMContentLoaded", function() {
-      // Ищем любое возможное место вывода основного контента в теме Minimal Mistakes
-      const mainContainer = document.querySelector('.page__inner-wrap') || document.querySelector('article') || document.getElementById('main');
-      
-      if (mainContainer) {
-        // Полностью очищаем внутренности и вставляем карточку ограничения доступа
-        mainContainer.innerHTML = `
-          <div id="lock-warning-block" style="background-color: #fff5f5 !important; border-left: 5px solid #ff3d00 !important; padding: 25px !important; border-radius: 8px !important; margin: 30px 0 !important; display: block !important; clear: both !important; box-shadow: 0 4px 15px rgba(255,61,0,0.05);">
-            <h3 style="color: #ff3d00; margin-top: 0; font-size: 20px;"><i class="fas fa-lock"></i> Доступ ограничен</h3>
-            <p style="margin-bottom: 0; color: #333; font-size: 15px; line-height: 1.6;">Эта публикация содержит закрытые материалы Белорусского общества аквариумистов. Пожалуйста, перейдите во вкладку <b><a href="/account/" style="color: #00bcd4; font-weight: bold; text-decoration: underline;">Аккаунт</a></b> и авторизуйтесь под своим клубным паролем, чтобы прочесть статью.</p>
-          </div>
-        `;
-      }
-    });
-  })();
-</script>
 
 
 <!-- СКРЫТИЕ СИСТЕМНЫХ КНОПОК ПАГИНАЦИИ PREVIOUS И NEXT -->
