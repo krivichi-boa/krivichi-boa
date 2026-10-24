@@ -1,11 +1,11 @@
 ---
-layout: page
+layout: single
 ---
 
 <!-- КРАСНАЯ КАРТОЧКА С ЗАМКОМ ДЛЯ ГОСТЕЙ (Изначально видна всем) -->
 <div id="lock-warning-block" style="display: block; background-color: #fff5f5 !important; border-left: 5px solid #ff3d00 !important; padding: 20px !important; border-radius: 6px !important; margin: 20px 0 !important; clear: both !important;">
   <h3 style="color: #ff3d00; margin-top: 0;"><i class="fas fa-lock"></i> Доступ ограничен</h3>
-  <p style="margin-bottom: 0; color: #333; font-size: 15px;">Эта публикация содержит закрытые материалы Белорусского общества аквариумистов. Пожалуйста, перейдите во вкладку <b><a href="/account/" style="color: #00bcd4; font-weight: bold; text-decoration: underline;">Аккаунт</a></b>+++ и авторизуйтесь под своим клубным паролем, чтобы прочесть статью.</p>
+  <p style="margin-bottom: 0; color: #333; font-size: 15px;">Эта публикация содержит закрытые материалы Белорусского общества аквариумистов. Пожалуйста, перейдите во вкладку <b><a href="/account/" style="color: #00bcd4; font-weight: bold; text-decoration: underline;">Аккаунт</a></b> и авторизуйтесь под своим клубным паролем, чтобы прочесть статью.</p>
 </div>
 
 <!-- ЗАКРЫТЫЙ КОНТЕНТ СТАТЬИ (Изначально намертво спрятан) -->
@@ -13,7 +13,7 @@ layout: page
   {{ content }}
 </div>
 
-<!-- МОМЕНТАЛЬНЫЙ СКРИПТ ПРОВЕРКИ АВТОРblocks -->
+<!-- МОМЕНТАЛЬНЫЙ СКРИПТ ПРОВЕРКИ АВТОРИЗАЦИИ -->
 <script>
   (function() {
     // Если пользователь авторизован в Личном Кабинете БОА
