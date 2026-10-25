@@ -1,8 +1,8 @@
 ---
 layout: private
-title: "Название вашей секретной статьи"
-date: 2026-10-23
-categories: flora-fauna
+title: "Дождевой червяк в поперечном разрезе."
+date: 2026-10-25
+categories: our-animals
 ---
 
 
