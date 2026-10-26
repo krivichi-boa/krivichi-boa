@@ -36,18 +36,9 @@ header:
   <ul>
     <li>Просмотр закрытых материалов и архивов (разработан)</li>
     <li>Доступ к специальным файлам и памяткам для скачивания</li>
-    <li>Прямая приоритетная связь с администрацией ниже 👇</li>
+    <li>Прямая приоритетная связь с администрацией</li>
   </ul>
-    <!-- БЛОК ПРИОРИТЕТНОЙ СВЯЗИ ЧЕРЕЗ EMAIL (СКРЫТ ДЛЯ ГОСТЕЙ) -->
-  <div style="margin-top: 30px; padding: 25px; background-color: #f0f9ff; border-radius: 8px; border: 1px dashed #00bcd4; text-align: center; margin-bottom: 30px;">
-    <h3 style="margin-top: 0; color: #0284c7; text-align: left;"><i class="fas fa-envelope-open-text"></i> Приоритетная связь с администрацией БОА</h3>
-    <p style="font-size: 14px; color: #555; margin-bottom: 20px; text-align: left;">Ваше обращение как официального участника клуба будет обработано в первую очередь. Кнопка ниже автоматически сформирует защищенное письмо.</p>
-    
-    <a id="priority-mail-btn" href="#" class="btn btn--info" style="display: inline-block; font-weight: bold; border-radius: 4px; padding: 14px 28px; font-size: 16px; background-color: #00bcd4; color: #fff; text-decoration: none; box-shadow: 0 4px 10px rgba(0,188,212,0.2); transition: all 0.2s;">
-      <i class="fas fa-paper-plane"></i> Написать срочное письмо администрации
-    </a>
-  </div>
-
+ 
 
   <br>
   <button id="logout-trigger-btn" class="btn btn--danger" style="border-radius: 4px; padding: 8px 16px; font-size: 14px;">
@@ -68,16 +59,7 @@ header:
     const guestBlock = document.getElementById("guest-block");
     const userBlock = document.getElementById("user-block");
 
-    // Автоматически формируем тему и адрес письма под конкретного участника клуба
-const mailBtn = document.getElementById("priority-mail-btn");
-if (mailBtn) {
-  const adminEmail = "barsik.vet@mail.ru"; // Укажите ваш Email, куда придут письма
-  const emailSubject = encodeURIComponent(`ВАЖНО: Приоритетное обращение от ${currentUser.name} (БОА)`);
-  const emailBody = encodeURIComponent(`Здравствуйте, Юлия!\n\nЯ, ${currentUser.name}, пишу вам по следующему вопросу:\n\n[Введите ваше сообщение здесь]`);
-  
-  mailBtn.href = `mailto:${adminEmail}?subject=${emailSubject}&body=${emailBody}`;
-}
-
+   
     if (sessionData) {
       // Если вошли — прячем блок гостя, показываем карту пользователя
       const currentUser = JSON.parse(sessionData);
