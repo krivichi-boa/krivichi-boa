@@ -1,5 +1,5 @@
 ---
-layout: private
+layout: single
 title: "Дождевой червяк в поперечном разрезе.   2-е дополненное и исправленное издание"
 date: 2026-10-27
 categories: our-animals
