@@ -12,8 +12,6 @@ header:
 
 ---
 ### Прямой эфир на Ютубе
-<iframe width="560" height="315" src="https://youtube.com/embed/live_stream?channel=UCZs9x8Z2C3NwX-LoCgEIrCQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
 
 <div class="video-container">
   <iframe 
@@ -71,27 +69,18 @@ header:
     </a>
   </div>
 </div>
-### 🔴 Прямой эфир БОА на Facebook
-
-*Нажмите кнопку воспроизведения по центру экрана, чтобы запустить трансляцию. Если эфир сейчас не идет, здесь будет доступно наше последнее видео.*
-
-<!-- АДАПТИВНОЕ ОКНО ДЛЯ ЖИВОГО ЭФИРА FACEBOOK -->
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.15); margin-bottom: 30px;">
-  <iframe 
-    src="https://www.facebook.com/lmmdog4verma" 
-    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" 
-    scrolling="no" 
-    frameborder="0" 
-    allowfullscreen="true" 
-    allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
-  </iframe>
-</div>
-
 ---
 
 
 
 ### 📅 Ближайшие мероприятия и встречи
+<div style="background-color: #f9f9f9; padding: 20px; border-radius: 6px; border-left: 5px solid #4caf50; margin-bottom: 20px;">
+  <h4 style="margin-top: 0; color: #4caf50;">💻 Прямой эфир кормушки для птиц. 28 ноября 2026 г. в 21:30.</h4>
+  <p style="margin: 5px 0; font-size: 14px; color: #666;"><i class="fas fa-calendar-alt"></i> <b>Тип:</b> Прямой эфир в YouTube.</p>
+  <p style="margin: 10px 0 0 0; font-size: 15px;">Прямой эфир кормушки для птиц. 28 сентября 2026г.на</p> <p style="margin: 10px 0 0 0; font-size: 15px;"> Белорусском Обществе Аквариумистов.</p>
+
+
+</div>
 
 <div style="background-color: #f9f9f9; padding: 20px; border-radius: 6px; border-left: 5px solid #00bcd4; margin-bottom: 20px;">
   <h4 style="margin-top: 0; color: #0d919b;">🌱 География материков .</h4>
@@ -109,7 +98,7 @@ header:
 </div>
 
 <div style="background-color: #f9f9f9; padding: 20px; border-radius: 6px; border-left: 5px solid #4caf50; margin-bottom: 20px;">
-  <h4 style="margin-top: 0; color: #4caf50;">💻 Какие аквариумы бываю? 3 сентября 2026 г. в 21:30.</h4>
+  <h4 style="margin-top: 0; color: #4caf50;">💻 Какие аквариумы бывают? 3 сентября 2026 г. в 21:30.</h4>
   <p style="margin: 5px 0; font-size: 14px; color: #666;"><i class="fas fa-calendar-alt"></i> <b>Тип:</b> Прямой эфир в Telegram</p>
   <p style="margin: 10px 0 0 0; font-size: 15px;">Аквариумы травники,биотопы,разводные,креветочники.3 сентября 2026г.на</p>              <p style="margin: 10px 0 0 0; font-size: 15px;"> Белорусском Обществе Аквариумистов.</p>
 <a href="{{ '/assets/files/voda.docx' | relative_url }}" class="btn btn--info" download><i class="fas fa-file-download"></i> Скачать таблицу «Параметры воды»</a>
