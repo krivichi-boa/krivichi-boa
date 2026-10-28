@@ -77,7 +77,7 @@ header:
 <div style="background-color: #f9f9f9; padding: 20px; border-radius: 6px; border-left: 5px solid #4caf50; margin-bottom: 20px;">
   <h4 style="margin-top: 0; color: #4caf50;">💻 Прямой эфир кормушки для птиц. 28 ноября 2026 г. в 21:30.</h4>
   <p style="margin: 5px 0; font-size: 14px; color: #666;"><i class="fas fa-calendar-alt"></i> <b>Тип:</b> Прямой эфир в YouTube.</p>
-  <p style="margin: 10px 0 0 0; font-size: 15px;">Прямой эфир кормушки для птиц. 28 сентября 2026г.на</p> <p style="margin: 10px 0 0 0; font-size: 15px;"> Белорусском Обществе Аквариумистов.</p>
+  <p style="margin: 10px 0 0 0; font-size: 15px;">Прямой эфир кормушки для птиц. 28 сентября 2026г.</p> <p style="margin: 10px 0 0 0; font-size: 15px;"> На Белорусском Обществе Аквариумистов.</p>
 
 
 </div>
