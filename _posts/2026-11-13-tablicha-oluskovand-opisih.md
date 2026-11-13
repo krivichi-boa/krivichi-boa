@@ -1,6 +1,6 @@
 ---
 layout: private
-title: "Таблица "Моллюски"
+title: Таблица Моллюски
 date: 2026-11-13
 categories: flora-fauna
 tags: [растения, рыбки, уход, теория, новичкам]
