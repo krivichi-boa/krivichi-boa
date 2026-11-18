@@ -1,5 +1,5 @@
 ---
-layout: single
+layout: private
 title: "Удивительная биология: как на самом деле пьет аист?"
 date: 2026-08-18
 categories: diary
