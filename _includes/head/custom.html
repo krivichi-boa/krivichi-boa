@@ -63,4 +63,54 @@ s0.parentNode.insertBefore(s1,s0);
 
 
 
+<!-- СТИЛЬНЫЙ БЕЛЫЙ БЛОК ПОИСКА ПРИ НАЖАТИИ НА ЛУПУ -->
+<style>
+  /* Затемнение фона вокруг окна поиска */
+  .search-content {
+    background-color: rgba(0, 0, 0, 0.75) !important;
+    padding-top: 80px !important;
+  }
+
+  /* Белая подложка для самого поля ввода и результатов */
+  .search-content__inner-wrap {
+    background-color: #ffffff !important;
+    padding: 30px !important;
+    border-radius: 10px !important;
+    max-width: 800px !important;
+    margin: 0 auto !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4) !important;
+  }
+
+  /* Красивая строка ввода с мятной рамкой */
+  .search-input {
+    background-color: #f8fafc !important;
+    color: #1a202c !important;
+    border: 2px solid #00bcd4 !important;
+    border-radius: 6px !important;
+    padding: 12px 16px !important;
+    font-size: 18px !important;
+    width: 100% !important;
+  }
+
+  /* Читаемые заголовки и текст найденных статей */
+  .results__found {
+    color: #00bcd4 !important;
+    font-weight: bold !important;
+    margin-top: 15px !important;
+  }
+
+  .search-content .archive__item-title a {
+    color: #1a202c !important;
+    text-decoration: none !important;
+  }
+
+  .search-content .archive__item-title a:hover {
+    color: #00bcd4 !important;
+  }
+
+  .search-content .archive__item-excerpt {
+    color: #4a5568 !important;
+  }
+</style>
+
 
