@@ -69,3 +69,6 @@ defaults:
 search: true
 search_provider: "lunr" # Используем быстрый встроенный движок Lunr
 
+locale: "ru-RU"
+search: true
+
